@@ -42,6 +42,7 @@ import Progress from 'progress';
 import QuarterPicker from 'datetimepicker/QuarterPicker';
 import Radio from 'radio';
 import Rate from 'rate';
+import ResponsiveFlex from 'ResponsiveFlex';
 import SearchInput from 'search-input';
 import Select from 'select';
 import SelectMenu from 'select-menu'; // eslint-disable-line
@@ -110,6 +111,7 @@ export {
   QuarterPicker,
   Radio,
   Rate,
+  ResponsiveFlex,
   SearchInput,
   Select,
   SKU,

@@ -43,6 +43,7 @@
     "<rootDir>/src/datetimepicker"
   ],
   "moduleNameMapper": {
+    "^ResponsiveFlex(.*)$": "<rootDir>/src/ResponsiveFlex$1",
     "^affix(.*)$": "<rootDir>/src/affix$1",
     "^alert(.*)$": "<rootDir>/src/alert$1",
     "^auto-complete(.*)$": "<rootDir>/src/auto-complete$1",
