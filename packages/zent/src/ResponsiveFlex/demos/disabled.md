@@ -2,10 +2,8 @@
 order: 2
 zh-CN:
 	title: 测试
-	button: 测试
 en-US:
 	title: Disabled
-	button: Button disabled
 ---
 
 ```jsx

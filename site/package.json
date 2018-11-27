@@ -1,7 +1,7 @@
 {
   "name": "zyui-docs",
   "version": "0.0.1",
-  "description": "doc site generator for zent",
+  "description": "doc site generator for ZYUI",
   "keywords": [
     "docs",
     "react",
@@ -12,7 +12,8 @@
     "start": "cross-env NODE_ENV=development node scripts/start.js",
     "dev": "node scripts/gather.js && cross-env NODE_ENV=development node scripts/dev.js",
     "build": "rm -rf dist && node scripts/gather.js && cross-env NODE_ENV=production webpack --progress --hide-modules --config webpack/webpack.prd.config.js",
-    "deploy": "yarn run build && ./scripts/deploy.sh"
+    "deploy": "yarn run build && ./scripts/deploy.sh",
+    "gh": "./scripts/deploy.sh"
   },
   "dependencies": {
     "classnames": "^2.2.5",

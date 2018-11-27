@@ -6,14 +6,16 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const happyThreadPool = require('./happypack-thread-pool');
 
-const prefix = '/zent/';
+const prefix = '/';
 
+console.log('ssssssssssssssss');
 module.exports = Object.assign({}, base, {
   entry: {
     docs: './src/index.js',
     vendor: vendorEntry,
   },
 
+  // output: Object.assign({}, base.output),
   output: Object.assign({}, base.output, {
     publicPath: prefix,
   }),
@@ -31,7 +33,7 @@ module.exports = Object.assign({}, base, {
   plugins: base.plugins.concat([
     new FaviconsWebpackPlugin({
       // Your source logo
-      logo: './assets/zanui-logo.png',
+      logo: './assets/zyui-logo.png',
       // The prefix for all image files (might be a folder or a name)
       prefix: 'favico-[hash]-',
       // Emit all stats of the generated icons
