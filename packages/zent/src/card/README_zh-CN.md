@@ -2,7 +2,7 @@
 title: Card
 subtitle: 卡片
 path: component/card
-group: 展示
+group: 最右组件
 ---
 
 ## Card 卡片
