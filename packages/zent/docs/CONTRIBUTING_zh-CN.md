@@ -1,15 +1,15 @@
-## 如何参与 Zent 的开发
+## 如何参与 ZYUI 的开发
 
 #### 初始化项目:
 
 ```bash
-yarn bootstrap
+npm run  bootstrap
 ```
 
 #### 代码目录结构
 
 - 仓库包含两个 npm 包，代码都在 `packages` 目录下：`babel-plugin-zent` 以及 `zent`。
-- `site` 目录下是文档网站的代码，本地开发时可以在 `site` 目录下运行 `yarn dev` 开启文档网站。
+- `site` 目录下是文档网站的代码，本地开发时可以在 `site` 目录下运行 `npm run dev` 开启文档网站。
 
 组件代码都在 `packages/zent` 目录下：
 
@@ -33,7 +33,7 @@ packages/zent
 - 添加文档
 - 添加 Typescript 的定义
 
-我们提供了一个脚本来自动化大部分初始化工作，在 `packages/zent` 目录下执行 `yarn new-component YOUR-COMPONENT-NAME`，脚本会自动创建组件需要的目录和样板代码。
+我们提供了一个脚本来自动化大部分初始化工作，在 `packages/zent` 目录下执行 `npm run new-component YOUR-COMPONENT-NAME`，脚本会自动创建组件需要的目录和样板代码。
 
 代码写完之后还需要在 `packages/zent/typings` 目录下添加新组建对应的 Typescript 类型定义。
 
@@ -51,13 +51,13 @@ packages/zent
 我们的原则是：文档即代码。
 
 ```bash
-yarn dev
+npm run dev
 ```
 
 我们另外提供了一个命令用来运行单个组件的测试用例，传入组件在 `__tests__` 下的目录名或者文件名即可。
 
 ```bash
-yarn test-component button
+npm run test-component button
 ```
 
 ## 组件文档如何编写
