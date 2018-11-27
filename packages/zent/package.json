@@ -1,11 +1,11 @@
 {
   "name": "@xc/zyui",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "一套前端设计语言和基于React的实现",
-  "bugs": "https://github.com/youzan/zent/issues",
+  "bugs": "http://git.ixiaochuan.cn/FE/chenning",
   "repository": {
     "type": "git",
-    "url": "git@github.com:youzan/zent.git"
+    "url": "git@git.ixiaochuan.cn:FE/chenning.git"
   },
   "main": "./lib/index.js",
   "module": "./es/index.js",
