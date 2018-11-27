@@ -1,11 +1,11 @@
 {
-  "name": "zent-docs",
+  "name": "zyui-docs",
   "version": "0.0.1",
   "description": "doc site generator for zent",
   "keywords": [
     "docs",
     "react",
-    "zent"
+    "zyui"
   ],
   "license": "MIT",
   "scripts": {

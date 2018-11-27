@@ -1,6 +1,6 @@
 {
   "name": "@xc/zyui",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "一套前端设计语言和基于React的实现",
   "bugs": "https://github.com/youzan/zent/issues",
   "repository": {
@@ -20,7 +20,7 @@
     "new-component": "node ./scripts/new-component.js"
   },
   "typings": "typings/index.d.ts",
-  "author": "Youzan FE",
+  "author": "ZY FE",
   "license": "MIT",
   "files": [
     "src/",

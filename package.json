@@ -20,6 +20,7 @@
     "precommit": "lint-staged",
     "prepush": "yarn lint && yarn test",
     "build": "lerna run build",
+    "publish": "lerna publish",
     "dev": "cd site && yarn dev",
     "deploy": "cd site && yarn deploy"
   },
