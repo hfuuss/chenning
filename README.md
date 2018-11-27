@@ -1,3 +1,8 @@
+# chenning来源
+杨振宁（英语：Chen-Ning Franklin Yang，1922年10月1日－[注 1]），中国[12]理论物理学家，在统计力学和粒子物理学等领域贡献卓著，在物理学界影响力很大。他曾在抗日战争时的西南联合大学念本科、硕士，后赴美念博士。他与李政道于1956年共同提出宇称不守恒理论，因而分享1957年诺贝尔物理学奖，以中华民国国籍成为最早的华人诺奖得主。     
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/CNYang.jpg/200px-CNYang.jpg)
+
 # ZYUI
 
 ZYUI 是最右 抄 [zent](https://youzan.github.io/zent/) PC 端 WebUI 规范的 React 实现，提供了一整套基础的 UI 组件以及一些常用的业务组件。包括这个网站也是抄的。

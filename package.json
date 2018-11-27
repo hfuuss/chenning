@@ -6,7 +6,7 @@
   "scripts": {
     "test": "./scripts/test.sh",
     "test-component": "./scripts/test-component.sh",
-    "lint": "yarn lint-js && yarn lint-style",
+    "lint": "npm run lint-js && npm run lint-style",
     "lint-js": "eslint packages/*/src packages/*/__tests__ site/src/ site/webpack site/zent site/scripts",
     "lint-style": "stylelint 'site/src/**/*.pcss' 'packages/zent/assets/**/*.pcss'",
     "eslint-check": "eslint --print-config packages/zent/button/index.js | eslint-config-prettier-check",
@@ -15,14 +15,14 @@
     "format-style": "stylefmt",
     "prettify-style": "find site/src packages/zent/assets -type f -name '*.pcss' -exec stylefmt {} \\;",
     "prettify-js": "prettier --write -- \"packages/*/{src,__tests__}/**/*.js\" \"site/{src,scripts,webpack,zent}/**/*.js\"",
-    "prettify": "yarn prettify-js && yarn prettify-style",
+    "prettify": "npm run prettify-js && npm run prettify-style",
     "postinstall": "./scripts/ensure-husky-hooks.sh",
     "precommit": "lint-staged",
-    "prepush": "yarn lint && yarn test",
+    "prepush": "npm run lint && npm run test",
     "build": "lerna run build",
     "publish": "lerna publish",
-    "dev": "cd site && yarn dev",
-    "deploy": "cd site && yarn deploy"
+    "dev": "cd site && npm run dev",
+    "deploy": "cd site && npm run deploy"
   },
   "lint-staged": {
     "*.js": [
