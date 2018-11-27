@@ -2,28 +2,33 @@ import React, { Component } from 'react';
 
 import './style.pcss';
 
-const TEXT = {
-  'zh-CN': {
-    vant: 'Vant-Vue 组件库',
-    weapp: '微信小程序组件库',
-    feed: '意见反馈',
-    amway: '加入我们',
-  },
-  'en-US': {
-    vant: 'Vant',
-    weapp: 'WeApp Components',
-    feed: 'Feedbacks',
-    amway: 'Join Us',
-  },
-};
+// const TEXT = {
+//   'zh-CN': {
+//     vant: 'Vant-Vue 组件库',
+//     weapp: '微信小程序组件库',
+//     feed: '意见反馈',
+//     amway: '加入我们',
+//   },
+//   'en-US': {
+//     vant: 'Vant',
+//     weapp: 'WeApp Components',
+//     feed: 'Feedbacks',
+//     amway: 'Join Us',
+//   },
+// };
 
 export default class PageFooter extends Component {
   render() {
-    const i18n = this.props.i18n || 'en-US';
+    // const i18n = this.props.i18n || 'en-US';
     return (
       <div className="page-footer">
         <ul className="page-footer__navs">
           <li className="page-footer__item">
+            <a className="page-footer__link">
+              这里是footer，未来可以放一些链接
+            </a>
+          </li>
+          {/* <li className="page-footer__item">
             <a
               href="https://github.com/youzan/zent"
               target="_blank"
@@ -84,7 +89,7 @@ export default class PageFooter extends Component {
             >
               {TEXT[i18n].amway}
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     );

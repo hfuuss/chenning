@@ -1,68 +1,66 @@
-<p>
-  <a href="https://github.com/youzan/">
-    <img alt="Youzan logo" width="36px" src="https://img.yzcdn.cn/public_files/2017/02/09/e84aa8cbbf7852688c86218c1f3bbf17.png" alt="youzan">
-  </a>
-</p>
-<p align="center">
-    <img alt="Zent logo" src="https://img.yzcdn.cn/public_files/2017/02/21/e96fcc2bb29150080fcf5da39cd27fbe.png">
-</p>
-<p align="center">
-  Zent <small><font color="grey">( &#92;ˈzent&#92; )</font></small>, a collection of essential UI components written with React.
-</p>
-<p align="center"><a href="./README-zh_CN.md">🇨🇳 访问中文版</a></p>
+# chenning来源
+杨振宁（英语：Chen-Ning Franklin Yang，1922年10月1日－[注 1]），中国[12]理论物理学家，在统计力学和粒子物理学等领域贡献卓著，在物理学界影响力很大。他曾在抗日战争时的西南联合大学念本科、硕士，后赴美念博士。他与李政道于1956年共同提出宇称不守恒理论，因而分享1957年诺贝尔物理学奖，以中华民国国籍成为最早的华人诺奖得主。     
 
-[![Build Status](https://travis-ci.org/youzan/zent.svg?branch=master)](https://travis-ci.org/youzan/zent) [![CircleCI](https://circleci.com/gh/youzan/zent.svg?style=svg)](https://circleci.com/gh/youzan/zent) [![Coverage Status](https://img.shields.io/coveralls/youzan/zent/master.svg?style=flat)](https://coveralls.io/github/youzan/zent?branch=master) [![npm version](https://img.shields.io/npm/v/zent.svg?style=flat)](https://www.npmjs.com/package/zent) [![downloads](https://img.shields.io/npm/dt/zent.svg)](https://www.npmjs.com/package/zent) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](packages/zent/docs/CONTRIBUTING_en-US.md)
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/CNYang.jpg/200px-CNYang.jpg)
 
-Zent ( \ˈzent\ ) is a React component library developed and used at Youzan. Zent provides a collection of essential UI components and lots of useful domain specific components.
+### ZYUI
 
-We have more than 50 components for now and we're releasing more.
+ZYUI 是最右 抄 [zent](https://youzan.github.io/zent/) PC 端 WebUI 规范的 React 实现，提供了一整套基础的 UI 组件以及一些常用的业务组件。包括这个网站也是抄的。
 
-Our goal is making React development faster and simpler.
+为了简单,所以没有删除zent原有的组件。
+zent的目标是让 React 项目开发更快、更简单。ZYUI也是这个目标。         
 
-### Features
 
-* High quality React components
-* Builtin TypeScript support
-* Supports custom themes
-* Import JavaScript and styles only if they are used
+### 为什么抄zent ?
+* zent整体架构简单易懂，相比antd的各种封装。zent清晰明了。还有部分文档说明。
+* 自己写了一个轻量的组件库，发展无论怎么轻量，最终还是需要，文档，组件库打包脚本化等等。zent都包含了。因此站在zent的基础上，搭建了ZYUI。
+
+### 特性
+
+* 高质量的 React 基础组件以及丰富的业务组件
+* 内置 TypeScript 类型定义文件
+* 支持定制主题
+* 代码/样式按需加载
 * yarn + webpack + babel + postcss + prettier + stylefmt
-* Handmade icon font
-* Tests coverage is above 90%
+* 一套有赞设计师绘制的图标库
+* 单测覆盖率在 90% 以上
 
-### Supported Environments
+### 支持环境
 
 * React >= 15.6
-* Modern browsers and IE >= 11
-* Supports server-side rendering(SSR)
+* 现代浏览器以及 IE 11 及以上
+* 支持服务端渲染(SSR)
 
-## Install
+### 安装
 
-```shell
-yarn add zent
-
-# or
-
-npm install zent --save
+```bash
+yarn add zyui
 ```
 
-## Documentation
+### 使用组件
 
-[https://youzan.github.io/zent/en/guides/install](https://youzan.github.io/zent/en/guides/install)
+```jsx
+import { Button } from 'zyui';
 
-## Contribution
+// 引入样式
+import 'zyui/css/index.css';
 
-Read our [contributing guide](packages/zent/docs/CONTRIBUTING_en-US.md) to learn about our development process, how to propose bugfixes and improvements, and how to build and test your changes to Zent.
+ReactDOM.render(<Button />, mountNode);
+```
 
-Send [issues](https://github.com/youzan/zent/issues) and [pull requests](https://github.com/youzan/zent/pulls) with your ideas.
+### 按需加载
 
-## Contact Us
+[babel-plugin-zyui](babel-plugin-zyui) 这个 babel 插件可以帮助减小打包文件的大小，原理是自动做了类似下面的代码变换。
 
-- [Slack](https://join.slack.com/t/zentjs/shared_invite/enQtMjcwNzM3NzE2OTMyLTc4MTg4MDkzZTVhNTQ5MmI4ZmVhOGQ2MzZhOTk2OGIyNmZjM2NhMzU3YjM4MzI3YTkxYWNjMDBhMzRiZTliNTE)
-- [Discord](https://discord.gg/Nf6wVd2)
-- Wechat(请备注 Zent)
-  
-	<img src="https://img.yzcdn.cn/public_files/2018/06/06/1fbe772102f91fae8eb3fa1767dd9b26.png" width="240px"/>
+```js
+import { Button } from 'zyui';
 
-## License
+// 变换为
 
-Project licensed under [MIT](https://en.wikipedia.org/wiki/MIT_License) license, feel free to enjoy and participate in Open Source.
+import Button from 'zyui/lib/button';
+```
+
+适用于基于 ZYUI 开发的组件库，以及对 ZYUI 使用量较少的项目。详细使用帮助请看[插件的文档](babel-plugin-zyui)。
+
+
+

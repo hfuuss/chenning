@@ -1,14 +1,14 @@
-# Zent
+# ZYUI
 
-Zent ( \ˈzent\ ) 是有赞 PC 端 WebUI 规范的 React 实现，提供了一整套基础的 UI 组件以及一些常用的业务组件。
+ZYUI 是最右 抄 [zent](https://youzan.github.io/zent/) PC 端 WebUI 规范的 React 实现，提供了一整套基础的 UI 组件以及一些常用的业务组件。包括这个网站也是抄的。
 
-目前我们有 50+ 组件，这些组件都已经在有赞的各类 PC 业务中使用，我们会在此基础上，持续开发一些新组件。
+为了简单,所以没有删除zent原有的组件。
+zent的目标是让 React 项目开发更快、更简单。ZYUI也是这个目标。         
 
-我们的目标是让 React 项目开发更快、更简单。
 
-### 组件展示
-
-![zent-components](https://b.yzcdn.cn/public_files/2018/04/17/00778671b9657602387902b6de9d1693.png)
+# 为什么抄zent ?
+* zent整体架构简单易懂，相比antd的各种封装。zent清晰明了。还有部分文档说明。
+* 自己写了一个轻量的组件库，发展无论怎么轻量，最终还是需要，文档，组件库打包脚本化等等。zent都包含了。因此站在zent的基础上，搭建了ZYUI。
 
 ### 特性
 
@@ -55,11 +55,6 @@ import { Button } from 'zent';
 import Button from 'zent/lib/button';
 ```
 
-适用于基于 Zent 开发的组件库，以及对 Zent 使用量较少的项目。详细使用帮助请看[插件的文档](babel-plugin-zent)。
+适用于基于 ZYUI 开发的组件库，以及对 ZYUI 使用量较少的项目。详细使用帮助请看[插件的文档](babel-plugin-zent)。
 
-<style>
-img[alt="zent-components"] {
-  width: 492px;
-  height: 438px;
-}
-</style>
+

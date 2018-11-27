@@ -101,6 +101,7 @@ export default ${JSON.stringify(LIST_STATICS, null, 2)};`.replace(
 
 const COMPONENT_GROUP_ORDER = {
   'zh-CN': {
+    最右组件: 0,
     基础: 1,
     导航: 2,
     数据: 3,
@@ -109,6 +110,7 @@ const COMPONENT_GROUP_ORDER = {
     业务组件: 6,
   },
   'en-US': {
+    ZYUI: 0,
     Basics: 1,
     Navigation: 2,
     'Data Entry': 3,

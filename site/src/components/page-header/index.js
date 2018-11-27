@@ -29,16 +29,16 @@ export default class PageHeader extends Component {
     return (
       <div className="page-header">
         <div className="page-header__top">
-          <a href="//www.youzanyun.com/zanui" className="page-header__logo">
+          <a href="//www.ixiaochuan.cn" className="page-header__logo">
             <img
-              src="https://img.yzcdn.cn/public_files/2017/12/18/fd78cf6bb5d12e2a119d0576bedfd230.png"
+              src="http://tbfile.ixiaochuan.cn/img/view/id/458122419/sz/148"
               alt="logo"
             />
-            <span>Zan UI</span>
+            <span>ZYUI</span>
           </a>
           <div className="page-header__search-sep" />
           <SearchBox locale={i18n} navData={sideNavData} />
-          <ul className="page-header__navs">
+          {/* <ul className="page-header__navs">
             <li className="page-header__item">
               <a href="https://github.com/youzan/zent">
                 <img
@@ -50,7 +50,7 @@ export default class PageHeader extends Component {
                 />
               </a>
             </li>
-          </ul>
+          </ul> */}
           <div
             className="page-header__i18n-switcher"
             type="primary"
