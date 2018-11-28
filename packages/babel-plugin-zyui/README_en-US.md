@@ -10,7 +10,7 @@
 
 ### 使用
 
-`npm install babel-plugin-zyui -D`
+`npm install @xc/babel-plugin-zyui -D`
 
 配置示例:
 
@@ -23,7 +23,7 @@
 }
 ```
 
-在 JavaScript 代码中通过 `import { Button, Dialog } from 'zyui'` 这种方式去引入 Zent 组件，插件会自动引入用到的组件代码。
+在 JavaScript 代码中通过 `import { Button, Dialog } from '@xc/zyui'` 这种方式去引入 ZYUI 组件，插件会自动引入用到的组件代码。
 
 ### 配置
 
