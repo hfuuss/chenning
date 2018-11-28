@@ -50,7 +50,7 @@ ReactDOM.render(<Button />, mountNode);
 
 ### 按需加载
 
-[babel-plugin-zent](babel-plugin-zent) 这个 babel 插件可以帮助减小打包文件的大小，原理是自动做了类似下面的代码变换。
+<!-- [babel-plugin-zent](babel-plugin-zent) 这个 babel 插件可以帮助减小打包文件的大小，原理是自动做了类似下面的代码变换。 -->
 
 ```js
 import { Button } from '@xc/zyui';
@@ -59,7 +59,7 @@ import { Button } from '@xc/zyui';
 
 import Button from '@xc/zyui/lib/button';
 ```
-
-适用于基于 ZYUI 开发的组件库，以及对 ZYUI 使用量较少的项目。详细使用帮助请看[插件的文档](babel-plugin-zent)。
+<!-- 
+适用于基于 ZYUI 开发的组件库，以及对 ZYUI 使用量较少的项目。详细使用帮助请看[插件的文档](babel-plugin-zent)。 -->
 
 
