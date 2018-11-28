@@ -1,4 +1,4 @@
-const MODULE_NAME = 'zent';
+const MODULE_NAME = '@xc/zyui';
 
 // Errors:
 // import 'zent';

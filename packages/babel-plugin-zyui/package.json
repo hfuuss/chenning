@@ -1,6 +1,6 @@
 {
-  "name": "babel-plugin-zent",
-  "version": "1.2.1",
+  "name": "@xc/babel-plugin-zyui",
+  "version": "1.0.0",
   "main": "lib/index.js",
   "license": "MIT",
   "scripts": {

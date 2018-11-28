@@ -24,8 +24,11 @@ function main() {
   const jsMapping = generateModuleJSMapping();
   const mapping = mergeJSAndCSS(jsMapping, cssMapping);
   appendPostcssToMapping(mapping);
-
-  writeJSONToFile(mapping, '../lib/module-mapping.json');
+  writeJSONToFile(
+    JSON.parse(JSON.stringify(mapping).replace(/zent/g, '@xc/zyui')),
+    '../lib/module-mapping.json'
+  );
+  // writeJSONToFile(mapping, '../lib/module-mapping.json');
 }
 
 main();
